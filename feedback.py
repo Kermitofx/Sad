@@ -24,10 +24,8 @@ debug_group = CREDENTIALS.get('debug_group') or -1001198682178
 
 
 def command(update, context):
-    print('here')
     try:
         msg = update.message
-        print(msg.chat_id)
         if (not msg) or (msg.chat_id < 0):
             return
         msg.reply_text(START_MESSAGE)
@@ -49,7 +47,6 @@ def getDisplayUser(user):
 def manage(update, context):
     try:
         msg = update.message
-        print(msg.chat_id)
         if (not msg) or (msg.chat_id < 0):
             return 
         context.bot.send_message(
