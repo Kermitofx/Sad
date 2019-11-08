@@ -10,12 +10,11 @@ import threading
 import traceback as tb
 
 START_MESSAGE = ('''
-I will allow non-admin to submit channel post, send me any suggested post please.
+Please send me feedback and appeal. For appeal, please state why and how you are interested in the group topic.
 ''')
 
 REPLY = '''
-Thank you so much for your contribution! 
-Your post suggestion is recorded. Please expect to see your post in the channel soon!'
+Thank you so much for your Feedback/appeal. Your message is recorded!
 '''
 
 with open('CREDENTIALS') as f:
@@ -25,8 +24,10 @@ debug_group = CREDENTIALS.get('debug_group') or -1001198682178
 
 
 def command(update, context):
+    print('here')
     try:
         msg = update.message
+        print(msg.chat_id)
         if (not msg) or (msg.chat_id < 0):
             return
         msg.reply_text(START_MESSAGE)
@@ -48,6 +49,7 @@ def getDisplayUser(user):
 def manage(update, context):
     try:
         msg = update.message
+        print(msg.chat_id)
         if (not msg) or (msg.chat_id < 0):
             return 
         context.bot.send_message(

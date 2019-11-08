@@ -1,8 +1,8 @@
-# telegram_contribute_bot
+# telegram_feedback_bot
 
-Allow non-admin to submit channel post.
+Manage feedback for group.
 
-You are also welcome to use my [@contribute_bot](https://t.me/contribute_bot) without create your own bot.
+Bot: [Feedback Bot](https://t.me/group_feedback_bot)
 
 ## how to install
 
@@ -14,10 +14,10 @@ The bot will automatically be running at the end of setup.
 
 ## bot description
 
-Allow non-admin to submit channel post.
+Manage feedback for group.
 
-Github: https://github.com/gaoyunzhi/telegram_channel_contribute_bot
+Github: https://github.com/gaoyunzhi/telegram_feedback_bot
 
 ## bot about 
 
-Allow non-admin to submit channel post.
+Manage feedback for group.
